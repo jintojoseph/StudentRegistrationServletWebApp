@@ -37,3 +37,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### custom files ###
+src/main/resources/db.properties
+# Database Secrets
+db.properties
+src/main/resources/db.properties
