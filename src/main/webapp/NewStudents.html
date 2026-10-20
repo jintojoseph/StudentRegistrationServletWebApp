@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Student Details</title>
+</head>
+<body>
+<h2>Student Details Form</h2>
+<form action="register" method="POST">
+
+    <!-- Full Name -->
+    <div>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required placeholder="Enter student's full name">
+    </div>
+    <br>
+
+    <!-- Date of Birth -->
+    <div>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+    <br>
+
+    <!-- Gender -->
+    <div>
+        <label>Gender:</label><br>
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+    <br>
+
+    <!-- Email Address -->
+    <div>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required placeholder="student@example.com">
+    </div>
+    <br>
+
+    <!-- Phone Number -->
+    <div>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+    </div>
+    <br>
+
+    <!-- Class/Grade -->
+    <div>
+        <label for="grade">Class / Grade:</label><br>
+        <select id="grade" name="grade" required>
+            <option value="">Select Class</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+            <option value="11">Class 11</option>
+            <option value="12">Class 12</option>
+        </select>
+    </div>
+    <br>
+
+    <!-- Address -->
+    <div>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" placeholder="Enter residential address"></textarea>
+    </div>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Details</button>
+
+</form>
+</body>
+</html>

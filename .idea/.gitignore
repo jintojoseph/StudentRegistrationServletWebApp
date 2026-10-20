@@ -1,0 +1,18 @@
+# --- IntelliJ IDEA ---
+.idea/
+/shelf/
+/workspace.xml
+/httpRequests/
+/queries/
+/dataSources/
+/dataSources.local.xml
+*.iml
+
+# --- Compiled Java ---
+*.class
+target/
+build/
+
+# --- Sensitive Configuration ---
+db.properties
+src/main/resources/db.properties
